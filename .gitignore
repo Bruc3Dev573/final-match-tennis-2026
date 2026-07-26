@@ -1,0 +1,19 @@
+# Never commit game ROMs / disc images (copyright)
+*.pce
+*.bin
+*.chd
+*.iso
+*.cue
+*.img
+
+# Emulator artifacts
+*.sav
+*.srm
+*.bsv
+*.state*
+*.png.state
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
