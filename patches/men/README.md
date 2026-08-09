@@ -23,8 +23,40 @@ The patch also stamps a small **`ATP` / `2026`** badge on the tennis ball of the
 screen (between "Final Match" and "TENNIS"), so the modded edition is identifiable at a
 glance.
 
-> The original game is already in English (menus, "STATISTICS", etc.); only the Japanese
-> player names were ever katakana. This patch romanises them into the modern roster.
+## Credits - this patch builds on tAz's English translation
+
+This patch was developed against **tAz's English translation** of the game
+(*Final Match Tennis (J) TEng v1.2*, `tAz-07`), not against a clean Japanese dump. As a
+result the published IPS **reproduces 1,294 bytes of that translation** - the Latin
+letterforms in the font/tile regions the name screens draw from - across four ranges.
+
+In each of those ranges the bytes this patch writes are exactly the bytes tAz changed:
+same count, same values, nothing added and nothing left out.
+
+| Range | tAz changed (vs. clean dump) | This patch writes | Identical to tAz |
+|---|---:|---:|---:|
+| `$1C204-$1C4CE` | 329 | 329 | 329 |
+| `$1F000-$1F59E` | 673 | 673 | 673 |
+| `$1F600-$1F79E` | 189 | 189 | 189 |
+| `$1F800-$1F8DE` | 103 | 103 | 103 |
+| **Total** | **1,294** | **1,294** | **1,294** |
+
+tAz's translation changes 2,785 bytes of the ROM in total, so this patch carries
+**roughly 46% of that translation's work** inside it.
+
+Full credit and thanks to **tAz** for that translation, without which this patch would
+not exist in its current form. Those bytes are tAz's work, not this project's, and are
+**not** covered by this repository's MIT licence - see [LICENSE](../../LICENSE).
+
+Anyone can verify this: apply the IPS to the clean No-Intro dump above, then compare the
+four ranges against tAz's ROM. They match byte for byte, while the unpatched dump does
+not. Note that because the translation's data travels inside the IPS, applying the patch
+to the clean dump still yields the hashes listed above - you do not need tAz's ROM to use
+this patch, which is exactly why the dependency was easy to miss.
+
+The **Ladies (WTA)** patch is *not* derived from that translation: it was built from the
+*Human Sports Festival* extraction, and no contiguous run of its patch data matches tAz's
+ROM.
 
 ## Roster
 

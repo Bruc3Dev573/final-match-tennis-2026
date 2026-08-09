@@ -78,10 +78,26 @@ The modern roster, on every screen:
 
 ---
 
+## Credits
+
+- **tAz** - English translation *Final Match Tennis (J) TEng v1.2*. The men's (ATP) patch
+  was developed against that translation rather than a clean Japanese dump, and reproduces
+  **1,294 bytes** of it. Full credit and thanks; that data is tAz's work and is not
+  licensed by this project. Exact ranges and a way to verify them are on the
+  [men's patch page](patches/men/README.md#credits---this-patch-builds-on-tazs-english-translation).
+- The **Ladies** base image relies on the community boot-fixup IPS that makes the Track 02
+  extraction bootable as a HuCard. The Ladies patch itself is not derived from tAz's work.
+
+---
+
 ## Disclaimer
 
 This project distributes **only** the changes needed to modernise the roster (IPS diffs)
-plus documentation. It contains no game code or graphics from the original titles. You
-must own and dump your own copies of the games. Player names are used descriptively to
-identify real athletes; this is an unofficial fan project with no affiliation to any
-game publisher, player, or sporting body.
+plus documentation. It ships no playable ROM; the diffs do contain modified font/tile data
+derived from the base images, and - for the men's patch - data from tAz's translation as
+described under [Credits](#credits). You must own and dump your own copies of the games.
+Player names are used descriptively to identify real athletes; this is an unofficial fan
+project with no affiliation to any game publisher, player, or sporting body.
+
+If you hold rights to material used here and want it removed, please open an issue.
+I will review the request and take down the affected files if needed.

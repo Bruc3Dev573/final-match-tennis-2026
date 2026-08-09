@@ -18,7 +18,7 @@ image first, then apply this patch. The extracted base must be:
 | CRC32 | `5D3E96F1` |
 | MD5 | `cf8f2dfcd7ad6696917709abacd105b7` |
 
-After patching, the result is **MD5 `ee7a2f6b337143fba17cc84064690f7d` / CRC32 `38545D96`**.
+After patching, the result is **MD5 `e4757200ed1799b39ff855bde108a0fd` / CRC32 `22B49A65`**.
 
 The patch also stamps a small **`WTA` / `2026`** badge on the tennis ball of the title
 screen (between "Final Match" and "TENNIS").
@@ -39,6 +39,9 @@ From your own dump of *Human Sports Festival (Japan)*:
 
 Assigned by **2024-25 WTA ranking order**. Each modern player inherits the in-game
 attributes and CPU behaviour of the original slot she replaces.
+
+P2 and P5 exchange palette sets so Gauff has a dark-skinned portrait and match sprite.
+Gameplay data stays with its original slot.
 
 | Slot | In-game | Modern player | Notes |
 |:---:|:---|:---|:---|

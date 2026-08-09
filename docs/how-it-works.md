@@ -28,9 +28,16 @@ letters** - two characters per tile. A 6-letter name becomes 3 tiles, which fits
 
 Each tile is a 4bpp 8×8 glyph. A letter is defined as 7 rows of a 4-bit column mask; a pair
 tile packs the left letter in the high nibble and the right letter in the low nibble of each
-row. The original Japanese font had no `P`, `W` or `Y`, so those three glyphs were drawn from
-scratch (and later tuned - a 4-pixel `N` and `M`, or `J` and `I`, are easy to confuse and
-needed distinct shapes).
+row.
+
+The working base for the men's game was **tAz's English translation** (*Final Match Tennis
+(J) TEng v1.2*), not the clean Japanese dump - see
+[Credits](../patches/men/README.md#credits---this-patch-builds-on-tazs-english-translation).
+The Latin letterforms this technique relies on come from that translation; the font in the
+untouched Japanese ROM is substantially different (tAz rewrote roughly 46% of the bytes in
+these regions). What was drawn from scratch here is `P`, `W` and `Y`, which tAz's font did
+not include, plus later tuning - a 4-pixel `N` and `M`, or `J` and `I`, are easy to confuse
+and needed distinct shapes.
 
 ## 3. Three screens, three code paths
 
