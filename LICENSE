@@ -23,9 +23,18 @@ SOFTWARE.
 ---
 
 NOTE: This license applies to the original material in this repository - the
-documentation, the tools, and the patch data authored for this project. It does
-NOT grant any rights to the underlying games "Final Match Tennis" or
+documentation, the tools, and the patch data authored for this project.
+
+It does NOT cover the portions of the men's (ATP) patch that reproduce tAz's
+English translation "Final Match Tennis (J) TEng v1.2". The published IPS writes
+1,294 bytes that are byte-identical to that translation, in the ranges
+$1C204-$1C4CE, $1F000-$1F59E, $1F600-$1F79E and $1F800-$1F8DE. That data is tAz's
+work, is not original material of this project, and is not offered under the MIT
+terms above. See patches/men/README.md for details and verification.
+
+It also does NOT grant any rights to the underlying games "Final Match Tennis" or
 "Final Match Tennis Ladies" / "Human Sports Festival", which remain the property
-of their respective copyright holders. No original game code or graphics are
-included here. You must supply your own legally-obtained copy of each game to use
-these patches. This is an unofficial, non-commercial fan project.
+of their respective copyright holders. No playable ROM is included here; the IPS
+diffs do contain modified font/tile data derived from those games. You must supply
+your own legally-obtained copy of each game to use these patches. This is an
+unofficial, non-commercial fan project.
