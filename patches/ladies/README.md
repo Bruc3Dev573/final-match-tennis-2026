@@ -18,7 +18,7 @@ image first, then apply this patch. The extracted base must be:
 | CRC32 | `5D3E96F1` |
 | MD5 | `cf8f2dfcd7ad6696917709abacd105b7` |
 
-After patching, the result is **MD5 `e4757200ed1799b39ff855bde108a0fd` / CRC32 `22B49A65`**.
+After patching, the result is **MD5 `604eac4fb0872f629d57014df5b8fefb` / CRC32 `AC2C7C5C`**.
 
 The patch also stamps a small **`WTA` / `2026`** badge on the tennis ball of the title
 screen (between "Final Match" and "TENNIS").
@@ -40,8 +40,12 @@ From your own dump of *Human Sports Festival (Japan)*:
 Assigned by **2024-25 WTA ranking order**. Each modern player inherits the in-game
 attributes and CPU behaviour of the original slot she replaces.
 
-P2 and P5 exchange palette sets so Gauff has a dark-skinned portrait and match sprite.
-Gameplay data stays with its original slot.
+P2 and P5 exchange their character colour entries, so Gauff gets a dark-skinned portrait and
+match sprite and Andreeva a light-skinned one. The three colour groups involved - skin,
+hair/kit and the facial linework - were then retuned: a plain exchange left the skin highlight
+and the hair shadow on the same value, which flattened the portrait into one mass, and the hard
+linework read as deep creases on a 21-year-old. Gameplay data stays with its original slot; the
+portrait and sprite artwork itself is the original slot's and is not redrawn.
 
 | Slot | In-game | Modern player | Notes |
 |:---:|:---|:---|:---|

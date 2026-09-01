@@ -128,7 +128,8 @@ to edit. Instead:
 
 ## 9. Why gameplay is unchanged
 
-None of this touches the player attribute/AI data, sprites, portraits or match logic - only
-name font tiles and name tables. Each modern player is, mechanically, the original slot they
-replaced. That is intentional: it keeps the games' balance and feel exactly as shipped, and
-makes the diffs tiny (the IPS patches are only a few kilobytes).
+None of this touches the player attribute/AI data, sprite or portrait artwork, or match logic -
+only name font tiles, name tables and, in the Ladies patch, the colour entries of two player
+slots (see the roster note in `patches/ladies/README.md`). Each modern player is, mechanically,
+the original slot they replaced. That is intentional: it keeps the games' balance and feel
+exactly as shipped, and makes the diffs tiny (the IPS patches are only a few kilobytes).
